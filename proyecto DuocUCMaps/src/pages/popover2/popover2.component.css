@@ -1,0 +1,19 @@
+.center-button{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item{
+    min-height: 0.5rem;
+    max-height: 8rem;
+}
+
+
+.round {
+    width: 60%;
+    height: 60%;
+  }

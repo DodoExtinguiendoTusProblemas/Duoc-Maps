@@ -1,0 +1,53 @@
+<ion-content>
+    <ion-list class="small-list">
+        <ion-item>
+
+            <div class="center-button">
+                <ion-icon slot="start" name="person-circle-outline"></ion-icon>
+                <ion-button
+                class="round"
+                color="warning"
+                expand="block"
+                size="small"
+                (click)="perfilModal()"
+                (click)="close()"
+            >
+                Perfil
+            </ion-button>
+            </div>
+        </ion-item>
+        <ion-item>
+
+            <div class="center-button">
+                <ion-icon name="help-circle-outline"></ion-icon>
+                <ion-button
+                class="round"
+                color="warning"
+                expand="block"
+                size="small"
+                (click)="ayudaModal()"
+                (click)="close()"
+            >
+                Ayuda
+            </ion-button>
+            </div>
+        </ion-item>
+        <ion-item>
+
+            <div class="center-button">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <ion-button
+                class="round"
+                color="warning"
+                expand="block"
+                size="small"
+                (click)="alertClose()"
+                (click)="close()"
+                
+            >   
+                Cerrar sesión
+            </ion-button>
+            </div>
+        </ion-item>
+    </ion-list>
+</ion-content>

@@ -1,0 +1,31 @@
+<ion-content >
+    <ion-row >
+        <ion-col>
+            <h1 style="text-align: center">Perfil</h1>
+        </ion-col>
+    </ion-row>
+    <ion-item>
+        <ion-avatar slot="start">
+          <img src="https://cdn.discordapp.com/attachments/770310544614883339/916743082622459914/Cakes_and_Treats_2-modified.png">
+        </ion-avatar>
+        <ion-label>
+            <p>{{ user?.userName }}</p>
+            <p>{{ user?.userEmail }}</p>
+            <p>{{ user?.userPhone }}</p>
+            <p>{{ user?.createdAt | date }}</p>
+        </ion-label>
+      </ion-item>    
+</ion-content>
+
+
+
+<ion-footer class="ion-text-center">
+    <ion-toolbar>
+        <ion-button (click)="gotoProfile()" (click)="dismiss()">
+            Editar
+        </ion-button>
+        <ion-button (click)="dismiss()">
+            Cerrar
+        </ion-button>
+    </ion-toolbar>
+</ion-footer>

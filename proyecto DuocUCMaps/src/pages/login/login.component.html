@@ -1,0 +1,58 @@
+<ion-content
+    [fullscreen]="true"
+>
+    <ion-grid class="completa">
+        <ion-row class="completa ion-align-items-center">
+            <ion-col>
+                <ion-card>
+                    <ion-card-header>
+                        <div text-center>
+                            <ion-img width="150" height="150" src="assets/img/duoc.png"></ion-img>  
+                         </div>                         
+                        <ion-card-title class="ion-text-center">                                                                                         
+                            Inicio de sesión
+                        </ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                        <ion-grid>
+                            <ion-row>
+                                <ion-col>
+                                    <ion-item>
+                                        <ion-label position="floating">Nombre de usuario</ion-label>
+                                        <ion-input type="email" [(ngModel)]="email" name="email"></ion-input>
+                                    </ion-item>
+                                </ion-col>
+                            </ion-row>
+                            <ion-row>
+                                <ion-col>
+                                    <ion-item>
+                                        <ion-label position="floating">Contraseña</ion-label>
+                                        <ion-input type="password" [(ngModel)]="password" name="password"></ion-input>
+                                    </ion-item>
+                                </ion-col>
+                            </ion-row>     
+                            <ion-row>
+                                <ion-col>
+                                    <ion-button type="submit" (click)="login()" expand="block" shape="round" >Iniciar sesión</ion-button>
+                                </ion-col>
+                            </ion-row>
+                            <ion-row>
+                                <ion-col size="10" offset="1" class="ion-text-center">
+                                   <p> No tienes cuenta?<ion-router-link href="registro"> Registrate acá!</ion-router-link></p> 
+                                </ion-col>
+                            </ion-row>
+                            <ion-row>
+                                <ion-col size="10" offset="1" class="ion-text-center">
+                                    <ion-router-link href="recuperar">
+                                        Olvidé mi contraseña
+                                    </ion-router-link>
+                                </ion-col>
+                            </ion-row>
+                        </ion-grid>
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+        
+    </ion-grid>
+</ion-content>
