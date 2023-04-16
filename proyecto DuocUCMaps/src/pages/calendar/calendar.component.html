@@ -1,0 +1,25 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+           Calendario 
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="principal"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+  
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+
+    <ion-calendar 
+      [(ngModel)]="dateRange"
+      [options]="optionsRange"
+      [type]="string"
+      [format]="'YYYY-MMMM-DD'">
+    </ion-calendar>
+    
+  </div>
+</ion-content>

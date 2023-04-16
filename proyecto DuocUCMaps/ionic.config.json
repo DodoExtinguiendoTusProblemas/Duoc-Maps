@@ -1,0 +1,10 @@
+{
+  "name": "Recordatorios",
+  "integrations": {
+    "capacitor": {
+      "enabled": false
+    },
+    "cordova": {}
+  },
+  "type": "angular"
+}
