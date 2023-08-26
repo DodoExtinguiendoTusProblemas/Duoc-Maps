@@ -38,5 +38,11 @@ export class LoginComponent {
         toast.present();
     }
 
-
+    ngOnInit() {
+        const isLoggedIn = localStorage.getItem('isLoggedIn');
+        if (isLoggedIn === 'true') {
+          // Si el usuario estaba previamente conectado, redirigirlo a la página de inicio
+          this.router.navigate(['/principal']);
+        }
+    }
 }
