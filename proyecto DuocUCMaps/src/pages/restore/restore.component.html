@@ -21,13 +21,13 @@
                                         <ion-label position="floating">
                                             Correo electrónico
                                         </ion-label>
-                                        <ion-input type="email" required></ion-input>
+                                        <ion-input type="email" [(ngModel)]="email" required></ion-input>
                                     </ion-item>
                                 </ion-col>
                             </ion-row>
                             <ion-row>
                                 <ion-col>
-                                    <ion-button expand="block">
+                                    <ion-button expand="block" (click)="resetPassword()">
                                         Enviar
                                     </ion-button>
                                 </ion-col>

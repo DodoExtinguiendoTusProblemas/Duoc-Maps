@@ -11,10 +11,9 @@ import { LoadingController, ToastController } from "@ionic/angular";
     styleUrls: ['./register.component.css']
 })
 export class RegisterComponent {
-
+ 
     name:string;
     email:string;
-    phone:string;
     password:string;
 
     constructor(
@@ -26,7 +25,7 @@ export class RegisterComponent {
     ){}
     
     async register(){
-        if(this.name && this.email && this.phone && this.password){
+        if(this.name && this.email && this.password){
             const loading = await this.loadingCtrl.create({
                 message: 'Registrando..',
                 spinner: 'crescent',
@@ -41,7 +40,6 @@ export class RegisterComponent {
                     'userId': data.user.uid,
                     'userName': this.name,
                     'userEmail': this.email,
-                    'userPhone': this.phone,
                     'createdAt': Date.now()
                 })
                 .then(()=> {

@@ -14,7 +14,7 @@ export class ProfileComponent implements OnInit{
     userId:string;
     name:string;
     email:string;
-    phone:string;
+    
 
     constructor(
         private auth: AuthService,
@@ -29,7 +29,6 @@ export class ProfileComponent implements OnInit{
             this.userId = user.userId;
             this.name = user.userName;
             this.email = user.userEmail;
-            this.phone = user.userPhone;
         })
     }
 
@@ -45,7 +44,6 @@ export class ProfileComponent implements OnInit{
         this.afs.collection('user').doc(this.userId).set({
             'userName': this.name,
             'userEmail': this.email,
-            'userPhone': this.phone,
             'editAt': Date.now()
         },{merge: true})
         .then(()=> {
