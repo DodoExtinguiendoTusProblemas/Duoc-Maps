@@ -19,10 +19,6 @@
                     <ion-label position="stacked"> Correo electrónico </ion-label>
                     <ion-input required type="email" [(ngModel)]="email" name="email" value="Readonly" readonly></ion-input>
                 </ion-item>
-                <ion-item>
-                    <ion-label position="stacked"> Celular </ion-label>
-                    <ion-input required type="tel" [(ngModel)]="phone" name="phone"></ion-input>
-                </ion-item>
                 <ion-button type="submit" expand="block" shape="round" (click)="updateProfile()">Modificar</ion-button>
             </ion-list>
         </form>
