@@ -27,4 +27,18 @@ __________________________________________________________________
 |   Ionic                   |  7.2.0                              |
 ___________________________________________________________________
 
+# Pasos Para la Ejecución del Proyecto
+1. Descarga Del Proyecto: Se puede descargar el proyecto desde el archivo Zip o clonandolo.
+2. Instalar Node Modules: dentro de la carpeta " Proyecto DuocUCMaps" ejecutar " npm install ".
+3. Ejecutar proyecto:* ionic serve (ejecuta en el navegador).
+                     * ionic cordova run [platform] (ejecutar para android o ios)
+
+# Solución Posibles errores
+Error de ejecución de " ionic serve " con node 14.15.0 = si aparece un error "  [ng] throw new Error("The target entry-point \"" + invalidTarget.entryPoint.name + "\" has missing dependencies:\n" +
+                                                                                [ng] ^
+                                                                                [ng] Error: The target entry-point "@ionic-native/in-app-browser" has missing dependencies:
+                                                                                [ng]  - @ionic-native/core "
+se debe ejecutar " npm install --save @ionic-native/core "
+
+
 # Esperamos que este proyecto sea útil para la comunidad Duoc UC.
