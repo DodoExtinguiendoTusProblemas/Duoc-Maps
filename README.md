@@ -27,6 +27,15 @@ __________________________________________________________________
 |   Ionic                   |  7.2.0                              |
 ___________________________________________________________________
 
+# Instalación de dependencias
+
+nvm install 14.15.0
+nvm use 14.15.0
+npm i @angular/core@12.1.1
+npm install
+npm install -g @ionic/cli
+npm install --save @ionic-native/core
+
 # Pasos Para la Ejecución del Proyecto
 1. Descarga Del Proyecto: Se puede descargar el proyecto desde el archivo Zip o clonandolo.
 2. Instalar Node Modules: dentro de la carpeta " Proyecto DuocUCMaps" ejecutar " npm install ".
